@@ -4,9 +4,9 @@ function reverse(str) {
 function simplerencode(str){
     string=''
     for(var n = 1; n < str.length-1; n++){ 
-                    newWord = newWord + word[n];
+                    string = string + str[n];
                 }
-                return reverse(newWord +word[0]+"ay");
+                return reverse(string +str[0]+"ay");
 }
 function simplerdecode(str){
     string=reverse(str)
