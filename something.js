@@ -41,8 +41,8 @@ function encode1(str,n){
 function decode1(str,n){
 	return decodebase64(simpledecode(str,n))
 }
-function encode(){$('#outputField').val(encode1($('inputField').val(),$('secinputField').val()))}
-function decode(){$('#outputField').val(decode1($('inputField').val(),$('secinputField').val()))}
+function encode(){$('#outputField').val(encode1($('inputField').val(),Number($('secinputField').val())))}
+function decode(){$('#outputField').val(decode1($('inputField').val(),Number($('secinputField').val())))}
 decodebase64 = function(text){
     if (!text.trim()) return console.warn("No save to import provided.");
     if(text.length % 4 !== 0) {
