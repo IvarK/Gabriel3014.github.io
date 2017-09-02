@@ -22,17 +22,28 @@ function simplerdecode(str){
     return b+c
 }
 function simpledecode(str,n){
+	c=n
+	string=str
 	if(n==1){return simplerdecode(str)}
-	else{
-	return simplerdecode(simpledecode(str,n-1))
+	else{while(c>0){
+		string=simplerdecode(string)
+		c=c-1
+	}
+	     return string
 	}
 }
 function simpleencode(str,n){
+	c=n
+	string=str
     if(n==1){
     return simplerencode(str)
 }
     else{
-    return simplerencode(simpleencode(str,n-1))
+    while(c>0){
+		string=simplerencode(string)
+		c=c-1
+	}
+	     return string
 }
 }
 function encode1(str,n){
