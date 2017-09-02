@@ -3,7 +3,7 @@ function reverse(str) {
 }
 function simplerencode(str){
     string=''
-    for(var n = 1; n < len(str)-1; n++){ 
+    for(var n = 1; n < str.length-1; n++){ 
                     newWord = newWord + word[n];
                 }
                 return reverse(newWord +word[0]+"ay");
@@ -11,7 +11,7 @@ function simplerencode(str){
 function simplerdecode(str){
     string=reverse(str)
     a=''
-    for(var n = 0; n < len(string)-2; n++){ 
+    for(var n = 0; n < string.length-2; n++){ 
                     a = a + string[n];
                 }
     b=a[len(a)-1]
