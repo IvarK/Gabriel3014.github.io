@@ -16,7 +16,7 @@ function simplerdecode(str){
                 }
     b=a[len(a)-1]
     c=''
-    for(var n = 0; n < len(a)-1; n++){ 
+    for(var n = 0; n < a.length-1; n++){ 
                     c = c + a[n];
     }
     return b+c
