@@ -3,7 +3,7 @@ function reverse(str) {
 }
 function simplerencode(str){
     string=''
-    for(var n = 1; n < str.length-1; n++){ 
+    for(var n = 1; n < str.length; n++){ 
                     string = string + str[n];
                 }
                 return reverse(string +str[0]+"ay");
