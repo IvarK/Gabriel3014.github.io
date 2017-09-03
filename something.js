@@ -60,7 +60,7 @@ function decode(){
 }
 decodebase64 = function(text){
     var decompressed = LZString.decompressFromBase64(text);
-    return descompressed;
+    return decompressed;
 }
 
 encodebase64 = function(data){
