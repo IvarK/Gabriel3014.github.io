@@ -46,14 +46,13 @@ function simpleencode(str,n){
 	     return string
 }
 }
-function encode1(str,n){
+function encode(str,n){
 	return encodebase64(simpleencode(str,n))
 }
-function decode1(str,n){
+function decode(str,n){
 	return decodebase64(simpledecode(str,n))
 }
-function encode(){$('#outputField').val(encode1($('#inputField').val(),Number($('#secinputField').val())))}
-function decode(){$('#outputField').val(decode1($('#inputField').val(),Number($('#secinputField').val())))}
+
 decodebase64 = function(text){
     var decompressed = LZString.decompressFromBase64(text);
     $('#outputField').val(decompressed);
