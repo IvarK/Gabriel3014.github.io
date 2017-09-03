@@ -26,22 +26,22 @@ function simpledecode(str,n){
 	string=str
 	if(n==1){return simplerdecode(str)}
 	else{while(c>0){
-		string=simplerdecode(string)
-		c=c-1
+		string=simplerdecode(string);
+		c=c-1;
 	}
 	     return string
 	}
 }
 function simpleencode(str,n){
-	c=n
-	string=str
+	c=n;
+	string=str;
     if(n==1){
     return simplerencode(str)
 }
     else{
     while(c>0){
-		string=simplerencode(string)
-		c=c-1
+		string=simplerencode(string);
+		c=c-1;
 	}
 	     return string
 }
