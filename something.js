@@ -50,7 +50,7 @@ function encode1(str,n){
 	return encodebase64(simpleencode(str,n))
 }
 function decode1(str,n){
-	return simpledecode(decodebase64(str),999)
+	return simpledecode(decodebase64(str),n)
 }
 function encode(){
 	$('#outputField').val(encode1($('#inputField').val(),Number($('#secinputField').val())))
